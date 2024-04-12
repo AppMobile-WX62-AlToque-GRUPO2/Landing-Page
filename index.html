@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlToque!</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--usar recursos de boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--usar recursos de remixicons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!--barra nav -->
+    <header class="header">
+        <a href="#" class="logo"><img src="./images/logo.rectangulo.png" alt="Logo AlToque!"></a>
+
+        <ul class="navbar">
+            <li><a href="#about" class="btn-nav">Acerca</a></li>
+            <li><a href="#services" class="btn-nav">Nuestros servicios</a></li>
+            <li><a href="#reviews" class="btn-nav">Reseñas</a></li>
+            <li><a href="#contact" class="btn-nav">Contacto</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="login.html" class="usser"><i class="ri-user-fill"></i>Iniciar Sesión</a>
+            <a href="register.html">Registrarse</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!--home seccion-->
+    
+    <!--home seccion-->
+    <section class="home" id="home">
+        <div class="left-column">
+            <h3>AlToque!</h3>
+            <p>Rapidez en Acción, Calidad en Servicio</p> 
+            <button class="read-more-button">Leer Más</button>
+            <button class="download-button">Descargar App</button>
+        </div>
+        <div class="right-column">
+            <img src="./images/tech.jpg" alt="man">
+        </div>
+    </section>
+    
+    <section class="AboutUs bg-white p-20">
+        <div class="text-black text-center">
+            <h1 class="text-[48px] font-extrabold p-10">Acerca de</h1> 
+            <p class="text-[18px] flex flex-col h-full py-10">En AlToque!, creemos en la eficiencia, la calidad y la rapidez. 
+            Nuestra plataforma está diseñada para conectar a personas que necesitan soluciones
+            técnicas con expertos, todo en un solo lugar.
+            Ya sea que estés buscando soluciones para problemas en tu hogar, oportunidades laborales 
+            como técnico, estamos aquí para brindarte la mejor
+            experiencia.</p>
+            
+            <ul class="image-list flex flex-row flex-wrap justify-center">
+                <li class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <img src="./images/AboutUs_Soluciones_Rapidas.png" alt="">
+                    <h2>Soluciones Rápidas</h2>
+                    <p>Nuestra plataforma agiliza el proceso de encontrar expertos
+                    calificados para resolver problemas técnicos de manera eficiente
+                    y en tiempo récord</p>
+                </li>
+
+                <li class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <img src="./images/AboutUs_OportunidadesLaborales.png" alt="">
+                    <h2>Oportunidades Laborales</h2>
+                    <p>
+                    Conectamos a técnicos y expertos con clientes que buscan sus servicios
+                    , creando oportunidades laborales constantes y promoviendo el crecimiento
+                    profesional
+                    </p>
+                </li>
+
+                <li class="w-full md:w-1/2 lg:w-1/4 p-4">
+                    <img src="./images/AboutUs_24x7Disponible.png" alt="">
+                    <h2>24x7 Disponible</h2>
+                    <p>
+                    AlToque! está disponible las 24 horas del día, los 7 días de la semana,
+                    para que puedas acceder a soluciones y oportunidades cuando más las
+                    necesites
+                    </p>
+                </li>
+            </ul>
+            <div></div>
+        </div>
+    </section>
+
+    <section class="bg-[#4B4AEF] md:py-2" id = "services">
+        <div class="container mx-auto"> 
+            <div>
+                <h2 class="text-5xl text-center p-10 text-white">Nuestros Servicios</h2>
+                <div class="flex justify-center mb-20">
+                    <span class="w-1/3 h-1 bg-[#e11661]"></span>
+                    <span class="w-1/3 h-1 bg-[#fff]"></span>
+                </div>
+                
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-14 text-white mx-14 text-center flex justify-center">
+                <div class="">
+                    <img src="./images/img-cliente.png" alt="imagen de un cliente" class="m-auto">
+                    <div>
+                        <h3 class="text-2xl text-center py-8 text-white font-bold">Clientes</h3>
+                        <p class="">
+                            ¿Necesitas ayuda para solucionar problemas técnicos en casa? Encuentra expertos calificados que te
+                            brindarán soluciones eficientes y confiables en tiempo récord. Con AlToque!, tus necesidades
+                            están en buenas manos.
+                        </p>
+                        <button class="bg-[#E53E3E] rounded-lg py-3 px-14 my-10">
+                            <a href="#">Explorar</a>
+                        </button>
+                    </div>               
+                </div>
+                <div class="">
+                    <img src="./images/img-experto.png" alt="imagen de un experto" class="m-auto">
+                    <div>
+                        <h3 class="text-2xl text-center py-8 text-white font-bold">Expertos</h3>
+                        <p class="">
+                            ¿Eres un profesional técnico buscando expandir tu alcance y conectar con nuevos clientes? Únete a
+                            AlToque! y lleva tus servicios directamente a quienes los necesitan. Conviértete en la solución
+                            que los clientes están buscando.
+                        </p>
+                        <button class="bg-[#E53E3E] rounded-lg py-3 px-14 my-10">
+                            <a href="#">Explorar</a>
+                        </button>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-0" id="contact">
+        <div class="bg-[#4B4AEF] relative isolate h-80 flex items-center justify-center lg:flex lg:items-center lg:static lg:px-28">
+            <h2 class="text-5xl text-center text-white font-bold bg-black bg-opacity-60 rounded-3xl flex items-center h-1/2 lg:bg-transparent lg:text-white lg:text-6xl lg:text-center lg:fonto-bold lg:mr-36">
+                ¡Tenemos mas de 5k de usuarios registrados!
+            </h2>
+            <!-- Agregué la clase bg-cover para que la imagen cubra todo el espacio -->
+            <img class="absolute inset-0 -z-10 h-full w-full object-cover bg-cover lg:static lg:object-contain lg:w-auto"
+                src="./images/img-clientes.png" alt="imagen de cliente">
+        </div>
+        <div class="flex items-center justify-center md:mx-10 lg:space-x-0 my-10">
+            <div class="relative">
+                    <img src="./images/andrea.png" alt="Foto de Andrea, nuestra experta en servicio al cliente" class="object-cover rounded-full border-dashed border-2 border-black p-[40px] ">
+            </div>
+                <h2 class="m-0 absolute z-1 text-white text-4xl font-bold rounded-3xl bg-black bg-opacity-60  text-center px-10 md:static md:text-black md:text-4xl lg:text-6xl max-w-xl lg:bg-transparent md:bg-transparent justify-center" >
+                Servicio veloz, satisfacción garantizada
+            </h2>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-section">
+            <img src="./images/logo.rectangulo.png" alt="Logo">
+        </div>
+        <div class="footer-section">
+            <div class="footer-column">
+            <ul>
+                <li>Servicio</li>
+                <li>Domain</li>
+                <li>Share Hosting</li>
+                <li>Private Hosting</li>
+            </ul>
+            </div>
+            <div class="footer-column">
+            <ul>
+                <li>Empresa</li>
+                <li>Acerca de</li>
+                <li>Carrea</li>
+                <li>Contactanos</li>
+            </ul>
+            </div>
+            <div class="footer-column">
+            <ul>
+                <li>Hosting</li>
+                <li>al_toque@email.com</li>
+                <li>servitech@wordpress.com</li>
+            </ul>
+            </div>
+            <div class="footer-column">
+            <ul>
+                <li>Ayuda</li>
+                <li>FAQ</li>
+                <li>Soporte</li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-section">
+            <img src="./images/qr.png" alt="qr">
+        </div>
+    </footer>
+    <!----Java script-->
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
