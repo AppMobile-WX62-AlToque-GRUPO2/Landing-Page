@@ -11,47 +11,46 @@
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     <!--usar recursos de boxicons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="icon" href="./images/logo1.ico" type="image/ico">
     <!--usar recursos de remixicons-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
     <!--barra nav -->
     <header class="header">
-        <a href="#" class="logo"><img src="./images/logo.png" alt="Logo AlToque!"></a>
-
         <ul class="navbar">
             <li><a href="#about" class="btn-nav">Acerca</a></li>
             <li><a href="#services" class="btn-nav">Nuestros servicios</a></li>
             <li><a href="#reviews" class="btn-nav">Reseñas</a></li>
             <li><a href="#contact" class="btn-nav">Contacto</a></li>
         </ul>
-
         <div class="main">
-            <a href="login.html" class="usser"><i class="ri-user-fill"></i>Iniciar Sesión</a>
-            <a href="register.html">Registrarse</a>
+            <a href="" class="usser"></i>Iniciar Sesión</a>
+            <a href="">Registrarse</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
+
     </header>
     <!--home seccion-->
     
     <!--home seccion-->
     <section class="home" id="home">
-        <div class="left-column">
+        <div class="first">
             <h3>AlToque!</h3>
             <p>Rapidez en Acción, Calidad en Servicio</p> 
-            <button class="read-more-button">Leer Más</button>
-            <button class="download-button">Descargar App</button>
+            <button class="read-more-button">Descargar App</button>
         </div>
-        <div class="right-column">
-            <img src="./images/tech.jpg" alt="man">
+        <div class="second">
+          <img class="img1" src="./images/altoque1.png" alt="altoque1"> 
+          <img class="img2" src="./images/altoque2.png" alt="altoque2"> 
+          <img class="img3" src="./images/altoque3.png" alt="altoque3"> 
         </div>
     </section>
     
-    <section class="AboutUs bg-white p-20">
+    <section class="AboutUs bg-white p-20" style="margin-top: 50px;">
         <div class="text-black text-center">
             <h1 class="text-[48px] font-extrabold p-10">Acerca de</h1> 
             <p class="text-[18px] flex flex-col h-full py-10">En AlToque!, creemos en la eficiencia, la calidad y la rapidez. 
@@ -94,7 +93,7 @@
         </div>
     </section>
 
-    <section class="bg-[#4B4AEF] md:py-2" id = "services">
+    <section class="bg-[#FFD94D] md:py-2" id = "services">
         <div class="container mx-auto"> 
             <div>
                 <h2 class="text-5xl text-center p-10 text-white">Nuestros Servicios</h2>
@@ -137,15 +136,8 @@
             </div>
         </div>
     </section>
+
     <section class="p-0" id="contact">
-        <div class="bg-[#4B4AEF] relative isolate h-80 flex items-center justify-center lg:flex lg:items-center lg:static lg:px-28">
-            <h2 class="text-5xl text-center text-white font-bold bg-black bg-opacity-60 rounded-3xl flex items-center h-1/2 lg:bg-transparent lg:text-white lg:text-6xl lg:text-center lg:fonto-bold lg:mr-36">
-                ¡Tenemos mas de 5k de usuarios registrados!
-            </h2>
-            <!-- Agregué la clase bg-cover para que la imagen cubra todo el espacio -->
-            <img class="absolute inset-0 -z-10 h-full w-full object-cover bg-cover lg:static lg:object-contain lg:w-auto"
-                src="./images/img-clientes.png" alt="imagen de cliente">
-        </div>
         <div class="flex items-center justify-center md:mx-10 lg:space-x-0 my-10">
             <div class="relative">
                     <img src="./images/andrea.png" alt="Foto de Andrea, nuestra experta en servicio al cliente" class="object-cover rounded-full border-dashed border-2 border-black p-[40px] ">
@@ -154,45 +146,21 @@
                 Servicio veloz, satisfacción garantizada
             </h2>
         </div>
+        <div class="bg-[#FFD94D] relative isolate h-80 flex items-center justify-center lg:flex lg:items-center lg:static lg:px-28">
+            <h2 class="text-5xl text-center text-white font-bold bg-black bg-opacity-60 rounded-3xl flex items-center h-1/2 lg:bg-transparent lg:text-white lg:text-6xl lg:text-center lg:fonto-bold lg:mr-36">
+                ¡Tenemos mas de 5k de usuarios registrados!
+            </h2>
+            <!-- Agregué la clase bg-cover para que la imagen cubra todo el espacio -->
+            <img class="absolute inset-0 -z-10 h-full w-full object-cover bg-cover lg:static lg:object-contain lg:w-auto"
+                src="./images/img-clientes.png" alt="imagen de cliente">
+        </div>
     </section>
     <footer class="footer">
-        <div class="footer-section">
+        <div class="footer-logo">
             <img src="./images/logo.png" alt="Logo">
         </div>
         <div class="footer-section">
-            <div class="footer-column">
-            <ul>
-                <li>Servicio</li>
-                <li>Domain</li>
-                <li>Share Hosting</li>
-                <li>Private Hosting</li>
-            </ul>
-            </div>
-            <div class="footer-column">
-            <ul>
-                <li>Empresa</li>
-                <li>Acerca de</li>
-                <li>Carrea</li>
-                <li>Contactanos</li>
-            </ul>
-            </div>
-            <div class="footer-column">
-            <ul>
-                <li>Hosting</li>
-                <li>al_toque@email.com</li>
-                <li>servitech@wordpress.com</li>
-            </ul>
-            </div>
-            <div class="footer-column">
-            <ul>
-                <li>Ayuda</li>
-                <li>FAQ</li>
-                <li>Soporte</li>
-            </ul>
-            </div>
-        </div>
-        <div class="footer-section">
-            <img src="./images/qr.png" alt="qr">
+            <p>Copyright © 2024 todos los derechos reservados</p>
         </div>
     </footer>
     <!----Java script-->

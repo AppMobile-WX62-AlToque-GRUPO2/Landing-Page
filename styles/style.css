@@ -10,12 +10,14 @@ body{
 }
 
 :root{
-    --primary-color: #4B4AEF;
-    --secondary-color: #E53835;
+    --primary-color: #FFD94D;
+    --secondary-color: #000000;
     --text-color: #062D3E;
-    --text-primary-color: #ffffff;
+    --text-primary-color: #000000;
     --text-secundary-color: #18191F;
     --accent-color: #3C405F;
+    --stripe-orange: #FFA500; 
+    --stripe-red: #FF4500;
 }
 
 body{
@@ -23,6 +25,7 @@ body{
     background-color: #ffffff;
     color: var(--text-primary-color);
 }
+
 
 /**header css**/
 header{
@@ -33,11 +36,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
     padding: 10px 12%;
     transition: all .50s ease;
-    background: transparent;
-    box-shadow: 0 0 5px #ffffff;
+    background-color: var(--primary-color);
 }
 
 .logo{
@@ -46,7 +47,7 @@ header{
 }
 
 .logo img{
-    width: 100px;
+    width: 50px;
     height: auto;
 }
 
@@ -89,7 +90,6 @@ header{
     padding: 10px;
     justify-content: center;
     text-align: center;
-    box-shadow: 0px 0px 10px var(--secondary-color);
 }
 
 .usser{
@@ -104,73 +104,88 @@ header{
 }
 
 .main a:hover{
-    background-color: #d66e6c;
-    box-shadow: 0px 0px 10px #d66e6c;
+    background-color: #E53E3E;  
 }
 
 #menu-icon{
-    font-size: 35px;
+    font-size: 30px;
     color: var(--secondary-color);
     cursor: pointer;
     z-index: 10001;
     display: none;
 }
 
-/*cambia de color al primer movimiento*/
-.header-scroll {
-    background-color: var(--primary-color);
-    transition: 0.5s ease;
-}
 
 /**seccion**/
 section{
     padding: 80px 5%;
 }
 
+/**home**/
 .home {
-    display: flex; /* Use Flexbox to align content horizontally */
-    align-items: center; /* Vertically center the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: var(--primary-color);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
-.home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 50vw 90vw; /* Ajusta el tamaño de la línea diagonal */
-    border-color: transparent transparent transparent var(--primary-color); /* Color del lado derecho */
-    z-index: -5;
+.first {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
 
-.left-column h3{
-    margin-top:10px;
-    width: 608px;
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 77.5px; 
+.first h3{
+    font-size: 9rem;
+    color: var(--secondary-color);
+    font-family: 'Irish Grover', cursive;
 }
 
-.left-column p{
-    margin-bottom:10px;
-    width: 448px;
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.8px;
+.first p{
+    font-size: 1rem;
+    color: var(--text-primary-color);
+    margin-bottom: 10px;
 }
 
+.second {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2;
+}
+
+.second img {
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.img1 {
+    max-width: 25%;
+    margin-bottom: -100px; /* Specific margin for the first image */
+    margin-top: -60px;
+}
+
+.img2 {
+    max-width: 25%;
+    margin-bottom: -150px; /* Specific margin for the second image */
+}
+
+.img3 {
+    max-width: 25%;
+    margin-bottom: -100px; /* Specific margin for the third image */
+    margin-top: -60px;
+}
+
+.second img altoque1{
+    margin-bottom: -500px;
+}
 
 .read-more-button {
-    background-color: #E53E3E; 
+    background-color: #000000; 
     color: #fff; 
     padding: 10px 20px; 
     border: none;
@@ -178,115 +193,69 @@ section{
     margin-right: 10px; 
     cursor: pointer; 
     transition: background-color 0.3s, box-shadow 0.3s; 
-}
-
-
-.download-button {
-    background-color: transparent; 
-    color: #fff; 
-    padding: 10px 20px; 
-    border: 2px solid #fff; 
-    border-radius: 4px; 
-    cursor: pointer; 
-    transition: background-color 0.3s, box-shadow 0.3s; 
+    transition: all .50s ease;
 }
 
 .read-more-button:hover,.download-button:hover {
-    background-color: #D32F2F; 
+    background-color: #E53E3E; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+    color: rgb(0, 0, 0);
 }
 
-.left-column {
-    flex: 1;
-    margin-left: 20px; 
-    padding: 10px; 
-}
-  
-.right-column {
-    flex: 1; 
-    text-align: center; 
-}
-  
-
-.right-column img {
-    margin-top: 50px;
-    max-width: 100%; 
-}
+/**images of other**/
 
 .image-list {
     margin: 10px;
-  }
+}
   
-  .image-list li {
+.image-list li {
     margin: 0; 
     text-align: center; 
-  }
+}
   
-  .image-list li img {
+.image-list li img {
     margin: auto; 
-  }
+}
   
-  .image-list li h2 {
+.image-list li h2 {
     font-weight: bold;
     font-size: 20px;
     padding: 10px;
-  }
+}
 
-  .image-list li p {
+.image-list li p {
     margin-bottom: 50px;
     font-size: 12px;
-  }
+}
 
 
 /* Estilos generales para el footer */
 .footer {
-    background-color: var(--primary-color); 
-    padding: 5px;
-    padding-top: 20px;
-    color: #fff; 
+    background-color: white; 
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-
-  }
+    color: var(--text-primary-color);
+    justify-content: center; 
+}
   
 
-  .footer-section {
-    display: flex;
+.footer-logo {
+    justify-content: center; 
+}
+
+.footer-logo img{
+    width: 60px;
+}
+
+.footer-section {
+    display: flex; 
     justify-content: center; 
     align-items: center; 
-    padding: 5px;
-    flex: 1;
-    align-items: stretch;
-  }
-  
+}
 
-  .footer-column {
-    padding: 20px;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 5px;
-  }
-  
-
-  .footer img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-
-  .footer-section img {
-    max-width: 70%; 
-    max-height: 70%; 
-    margin-bottom: 10px; 
-  }
-  
+.footer-section p {
+    font-weight: bold;
+}
   
 
 /*responsive*/
